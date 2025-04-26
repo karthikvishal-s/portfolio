@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Visoria';
+  src: url('./assets/fonts/visoria-italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NewElegance';
+  src: url('/src/assets/fonts/the-new-elegance.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
