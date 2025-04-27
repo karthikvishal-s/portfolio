@@ -15,7 +15,7 @@ function HomePage() {
 
 
   return (
-    <div className="min-h-screen bg-beige flex flex-col justify-center items-center">
+    <div className="min-h-screen bg-beige flex flex-col justify-center items-center  p-8 sm:p-12">
       <br></br><br></br><br></br>
     <br></br><br></br><br></br>
     <br></br><br></br><br></br>
@@ -23,22 +23,49 @@ function HomePage() {
    
     
       <h1
-      className={`font-visoria text-tealgreen text-9xl font-bold text-center transition-all duration-[3000ms] ease-out ${loaded ? 'transform translate-y-0 opacity-100' : 'transform translate-y-full opacity-0'}`}
+      className={`font-visoria text-tealgreen text-9xl sm:text-9xl font-bold text-center transition-all duration-[3000ms] ease-out ${loaded ? 'transform translate-y-0 opacity-100' : 'transform translate-y-full opacity-0'}`}
     >
       Portfolio
     </h1>
     <br></br><br></br> <br></br><br></br>
-    <Link to="/resume" className={`font-NewElegance  hover:-translate-y-1 hover:bg-indigo-500 hover:scale-150 text-2xl text-center transition-all delay-[1000ms] duration-[1700ms] ease-out  ${loaded ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
+    <div className={`transition-opacity transition-transform delay-[1200ms] duration-[1700ms] ease-out
+  ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'}
+`}>
+  <Link 
+    to="/resume" 
+    className="font-NewElegance text-2xl text-center block transition-transform duration-300 ease-out hover:-translate-y-1 hover:scale-150"
+  >
     Resume
-     </Link>
+  </Link>
+</div>
+
     <br></br>
-    <Link to="/about" className={`font-NewElegance  hover:-translate-y-1 hover:scale-150 text-2xl text-center transition-all delay-[1300ms] duration-[1700ms] ease-out  ${loaded ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
-     About 
-     </Link>
+    
+    <div className={`transition-opacity transition-transform delay-[1700ms] duration-[1700ms] ease-out
+  ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'}
+`}>
+  <Link 
+    to="/about" 
+    className="font-NewElegance text-2xl text-center block transition-transform duration-300 ease-out hover:-translate-y-1 hover:scale-150"
+  >
+    About
+  </Link>
+</div>
+
+    
+
      <br></br>
-     <Link to="/projects" className={`font-NewElegance  hover:-translate-y-1 hover:bg-indigo-500 hover:scale-150 text-2xl text-center transition-all delay-[1600ms] duration-[1700ms] ease-out  ${loaded ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
-     Projects
-     </Link>
+     <div className={`transition-opacity transition-transform delay-[2200ms] duration-[1700ms] ease-out
+  ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'}
+`}>
+  <Link 
+    to="/projects" 
+    className="font-NewElegance text-2xl text-center block transition-transform duration-300 ease-out hover:-translate-y-1 hover:scale-150"
+  >
+    Projects
+  </Link>
+</div>
+
     <br></br><br></br><br></br>
     <br></br><br></br><br></br>
     <br></br><br></br><br></br>
@@ -49,7 +76,7 @@ function HomePage() {
     </div>
     <div className="flex gap-14 justify-center items-center mt-10">
   {/* GitHub */}
-  <div className={`font-NewElegance  hover:-translate-y-1 hover:bg-indigo-500 hover:scale-150 text-2xl text-center transition-all delay-[1800ms] duration-[1700ms] ease-out  ${loaded ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
+  <div className={`font-NewElegance  hover:-translate-y-1 hover:bg-indigo-500 hover:scale-150 text-2xl text-center transition-all delay-[2500ms] duration-[1700ms] ease-out  ${loaded ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
   <motion.a 
     href="https://github.com/karthikvishal-s" 
     target="_blank" 
@@ -61,7 +88,7 @@ function HomePage() {
   </motion.a>
   </div>
   
-  <div className={`font-NewElegance  hover:-translate-y-1 hover:bg-indigo-500 hover:scale-150 text-2xl text-center transition-all delay-[2000ms] duration-[1700ms] ease-out  ${loaded ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
+  <div className={`font-NewElegance  hover:-translate-y-1 hover:bg-indigo-500 hover:scale-150 text-2xl text-center transition-all delay-[2800ms] duration-[1700ms] ease-out  ${loaded ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
   {/* LinkedIn */}
   <motion.a 
     href="https://linkedin.com/in/karthik-vishal-s-851921287" 
@@ -73,7 +100,7 @@ function HomePage() {
   </motion.a>
   </div>
   
-  <div className={`font-NewElegance  hover:-translate-y-1 hover:bg-indigo-500 hover:scale-150 text-2xl text-center transition-all delay-[2200ms] duration-[1700ms] ease-out  ${loaded ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
+  <div className={`font-NewElegance  hover:-translate-y-1 hover:bg-indigo-500 hover:scale-150 text-2xl text-center transition-all delay-[3100ms] duration-[1700ms] ease-out  ${loaded ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
   {/* Email */}
   <motion.a 
     href="mailto:karthikvishal1506@gmail.com.com" 
