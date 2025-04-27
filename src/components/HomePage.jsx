@@ -28,43 +28,43 @@ function HomePage() {
       Portfolio
     </h1>
     <br></br><br></br> <br></br><br></br>
-    <div className={`transition-opacity transition-transform delay-[1200ms] duration-[1700ms] ease-out
-  ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'}
+    <div className={`transition-all delay-[1200ms] duration-[1700ms] ease-out 
+  ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[200%]'}
 `}>
   <Link 
     to="/resume" 
-    className="font-NewElegance text-2xl text-center block transition-transform duration-300 ease-out hover:-translate-y-1 hover:scale-150"
+    className="font-NewElegance text-2xl text-center block transition-transform duration-300 ease-out hover:-translate-y-1 hover:scale-110"
   >
     Resume
   </Link>
 </div>
 
-    <br></br>
-    
-    <div className={`transition-opacity transition-transform delay-[1700ms] duration-[1700ms] ease-out
-  ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'}
+<br />
+
+<div className={`transition-all delay-[1700ms] duration-[1700ms] ease-out 
+  ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[200%]'}
 `}>
   <Link 
     to="/about" 
-    className="font-NewElegance text-2xl text-center block transition-transform duration-300 ease-out hover:-translate-y-1 hover:scale-150"
+    className="font-NewElegance text-2xl text-center block transition-transform duration-300 ease-out hover:-translate-y-1 hover:scale-110"
   >
     About
   </Link>
 </div>
 
-    
+<br />
 
-     <br></br>
-     <div className={`transition-opacity transition-transform delay-[2200ms] duration-[1700ms] ease-out
-  ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'}
+<div className={`transition-all delay-[2200ms] duration-[1700ms] ease-out 
+  ${loaded ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[200%]'}
 `}>
   <Link 
     to="/projects" 
-    className="font-NewElegance text-2xl text-center block transition-transform duration-300 ease-out hover:-translate-y-1 hover:scale-150"
+    className="font-NewElegance text-2xl text-center block transition-transform duration-300 ease-out hover:-translate-y-1 hover:scale-110"
   >
     Projects
   </Link>
 </div>
+
 
     <br></br><br></br><br></br>
     <br></br><br></br><br></br>
