@@ -8,7 +8,7 @@ function Projects() {
       }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-beige to-white flex flex-col items-center p-10">
+    <div className="min-h-screen bg-beige flex flex-col items-center p-10">
              <div className={`text-7xl text-bold font-visoria text-tealgreen transition-all duration-[1500ms] delay-[300ms] ease-out  ${loaded ? 'transform translate-y-0 opacity-100' : 'transform -translate-y-20 opacity-0'}`}>
              My Projects</div>
       <br></br><br></br><br></br><br></br><br></br><br></br>
@@ -61,8 +61,11 @@ function Projects() {
             Enhanced with multiple React extensions for better interactivity. 
             Hosted on Vercel.
           </p>
-          <a className="mt-4 px-6 py-3 bg-royal-gold text-white font-semibold rounded-full flex items-center gap-2 transition-transform transition-colors duration-200 hover:scale-105 hover:brightness-110">
-            View Project <span>➔</span>
+          <a  href="https://github.com/karthikvishal-s/portfolio" className="mt-4 px-6 py-3 bg-royal-gold text-white font-semibold rounded-full flex items-center gap-2 transition-transform transition-colors duration-200 hover:scale-105 hover:brightness-110">
+            View Source <span>➔</span>
+          </a>
+          <a  href="https://portfolio-karthik-18.vercel.app/" className="mt-4 px-6 py-3 bg-royal-gold text-white font-semibold rounded-full flex items-center gap-2 transition-transform transition-colors duration-200 hover:scale-105 hover:brightness-110">
+            View Site <span>➔</span>
           </a>
         </div>
 
