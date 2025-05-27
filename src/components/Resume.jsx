@@ -1,6 +1,6 @@
 import React from 'react';
 // If you want to display an existing PDF
-import resumePDF from '/Resume-1.pdf';
+import resumePDF from '/KarthikVishal_InternshalaResume-4.pdf';
 
 const Resume = () => {
   return (

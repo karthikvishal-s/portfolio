@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 function Projects() {
-
+  const navigate = useNavigate();
     const [loaded, setLoaded] = useState(false);
     
       useEffect(() => {
@@ -9,6 +10,15 @@ function Projects() {
 
   return (
     <div className="min-h-screen bg-beige flex flex-col items-center p-10">
+
+{/* Back Button */}
+<button
+        onClick={() => navigate('/')}
+        className="absolute top-4 left-4 bg-tealgreen cursor-pointer text-white px-4 py-2 rounded-full shadow-md hover:bg-green-100 transition-all duration-300 z-10 transition-all duration-[1500ms] delay-[600ms] ease-out text-center" // Added z-10
+      >
+        ←
+      </button>
+
              <div className={`text-7xl text-bold font-visoria text-tealgreen transition-all duration-[1500ms] delay-[300ms] ease-out  ${loaded ? 'transform translate-y-0 opacity-100' : 'transform -translate-y-20 opacity-0'}`}>
              My Projects</div>
       <br></br><br></br><br></br><br></br><br></br><br></br>
@@ -53,6 +63,22 @@ function Projects() {
         </div>
 
         {/* Project Card 4 */}
+        <div className={`bg-white rounded-2xl shadow-lg p-20 border-gray-700 transition-all duration-[1500ms] delay-[2300ms] ease-out  ${loaded ? 'transform translate-x-0 opacity-100' : 'transform -translate-x-20 opacity-0'}`}>
+          <h2 className="text-3xl font-NewElegance mb-4 text-royal-gold">Portfolio -<span className='text-2xl text-blacky'>A FrontEnd Application</span></h2><br></br>
+          <p className="text-lg text-gray-700">
+            A personal portfolio website built using React and TailwindCSS,
+            showcasing various animations and transformations. 
+            Enhanced with multiple React extensions for better interactivity. 
+            Hosted on Vercel.
+          </p>
+          <a  href="https://github.com/karthikvishal-s/portfolio" className="mt-4 px-6 py-3 bg-royal-gold text-white font-semibold rounded-full flex items-center gap-2 transition-transform transition-colors duration-200 hover:scale-105 hover:brightness-110">
+            View Source <span>➔</span>
+          </a>
+          <a  href="https://portfolio-karthik-18.vercel.app/" className="mt-4 px-6 py-3 bg-royal-gold text-white font-semibold rounded-full flex items-center gap-2 transition-transform transition-colors duration-200 hover:scale-105 hover:brightness-110">
+            View Site <span>➔</span>
+          </a>
+        </div>
+
         <div className={`bg-white rounded-2xl shadow-lg p-20 border-gray-700 transition-all duration-[1500ms] delay-[2300ms] ease-out  ${loaded ? 'transform translate-x-0 opacity-100' : 'transform -translate-x-20 opacity-0'}`}>
           <h2 className="text-3xl font-NewElegance mb-4 text-royal-gold">Portfolio -<span className='text-2xl text-blacky'>A FrontEnd Application</span></h2><br></br>
           <p className="text-lg text-gray-700">
