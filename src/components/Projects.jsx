@@ -24,6 +24,23 @@ function Projects() {
       <br></br><br></br><br></br><br></br><br></br><br></br>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20 w-full h-full  max-w-8xl max-h-9xl">
 
+
+      {/* trr */}
+      <div className={`bg-white rounded-2xl shadow-lg p-20 border-gray-700 transition-all duration-[1500ms] delay-[800ms] ease-out  ${loaded ? 'transform translate-x-0 opacity-100' : 'transform -translate-x-20 opacity-0'}`}>
+          <h2 className="text-3xl font-NewElegance mb-4"><span className='text-red'>The Raven's Roost</span>-<span className='text-2xl'>A FullStack Application</span></h2><br></br>
+          <p className="text-lg text-gray-700 ">
+          <b>A GoT-themed Twitter clone</b><br></br>
+          TRR is a fully functional full stack web application built using Next.js,React.js, Mongodb,Express.js, Node.js,TailwindCSS and manymore stacks.The primary was to construct a complete social media app,starting from Authentications and JWT strategies to Deploying it in Vercel.google OAuth was used for authentication and Google is chosen as the provider.After 25 endless nights of work ,I present you <span className='font-bold text-2xl'>"The Raven's Roost"</span>
+          </p>
+          <a href="https://github.com/karthikvishal-s/Nexus" className="mt-4 px-6 py-3 bg-red text-white font-semibold rounded-full flex items-center gap-2 transition-transform transition-colors duration-200 hover:scale-105 hover:brightness-110">
+            View Source <span>➔</span>
+          </a>
+          <a href="https://theravensroost.vercel.app/" className="mt-4 px-6 py-3 bg-red text-white font-semibold rounded-full flex items-center gap-2 transition-transform transition-colors duration-200 hover:scale-105 hover:brightness-110">
+            Live site <span>➔</span>
+          </a>
+        </div>
+
+
         {/* Pensieve */}
         <div className={`bg-white rounded-2xl shadow-lg p-20 border-gray-700 transition-all duration-[1500ms] delay-[800ms] ease-out  ${loaded ? 'transform translate-x-0 opacity-100' : 'transform -translate-x-20 opacity-0'}`}>
           <h2 className="text-3xl font-NewElegance mb-4 text-royal-gold">PenSieve -<span className='text-2xl text-blacky'>A FullStack Application</span></h2><br></br>

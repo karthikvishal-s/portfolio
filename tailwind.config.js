@@ -14,7 +14,9 @@ export default {
         'royal-gold':'#eead0e',
         'royal-purple':'#660099',
         'blacky':'#000000',
-        'whity':'#ffffff'
+        'whity':'#ffffff',
+        'gray-700': '#4A5568',
+        'red':'#FF1744'
 
       },
       extend: {
