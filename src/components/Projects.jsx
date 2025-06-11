@@ -35,7 +35,7 @@ function Projects() {
           <a href="https://github.com/karthikvishal-s/Nexus" className="mt-4 px-6 py-3 bg-red text-white font-semibold rounded-full flex items-center gap-2 transition-transform transition-colors duration-200 hover:scale-105 hover:brightness-110">
             View Source <span>➔</span>
           </a>
-          <a href="https://theravensroost.vercel.app/" className="mt-4 px-6 py-3 bg-red text-white font-semibold rounded-full flex items-center gap-2 transition-transform transition-colors duration-200 hover:scale-105 hover:brightness-110">
+          <a href="https://varys.vercel.app/" className="mt-4 px-6 py-3 bg-red text-white font-semibold rounded-full flex items-center gap-2 transition-transform transition-colors duration-200 hover:scale-105 hover:brightness-110">
             Live site <span>➔</span>
           </a>
         </div>
