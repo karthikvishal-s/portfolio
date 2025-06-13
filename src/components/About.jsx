@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import ProfileCard from '../ProfileCard';
+
 import { useNavigate } from 'react-router-dom';
 import {
   FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJsSquare, FaGithub, FaTerminal
@@ -26,6 +28,19 @@ function About() {
       >
         ←
       </button>
+
+  
+<ProfileCard
+  name="Karthik Vishal"
+  title="Full Stack Developer"
+  handle="kaarthikkkkkk"
+  status="Online"
+  contactText="Contact Me"
+  avatarUrl="/path/to/avatar.jpg"
+  showUserInfo={true}
+  enableTilt={true}
+  onContactClick={() => console.log('Contact clicked')}
+/>
 
       {/* Main Content Area */}
       <div className="w-full max-w-6xl mt-16 md:mt-24"> {/* Adjusted margin-top for button clearance */}
