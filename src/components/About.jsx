@@ -36,7 +36,7 @@ function About() {
   handle="kaarthikkkkkk"
   status="Online"
   contactText="Contact Me"
-  avatarUrl="/path/to/avatar.jpg"
+  avatarUrl="vite.svg"
   showUserInfo={true}
   enableTilt={true}
   onContactClick={() => console.log('Contact clicked')}

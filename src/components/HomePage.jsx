@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { motion } from "framer-motion";
+import Orb from './Orb';
 
 function HomePage() {
   const [loaded, setLoaded] = useState(false);
@@ -11,8 +12,12 @@ function HomePage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-beige flex flex-col justify-center items-center p-6 sm:p-12">
-      <div className="flex flex-col items-center w-full">
+    <div className="min-h-screen bg-beige flex flex-col justify-center items-center p-6 sm:p-12 relative overflow-hidden">
+
+    
+
+      {/* Foreground Content */}
+      <div className="flex flex-col items-center w-full z-10 relative">
         <div className="mt-24 sm:mt-32">
           <h1 className={`font-visoria text-tealgreen text-6xl sm:text-9xl font-bold text-center transition-all duration-[3000ms] ease-out ${loaded ? 'transform translate-y-0 opacity-100' : 'transform translate-y-full opacity-0'}`}>
             Portfolio

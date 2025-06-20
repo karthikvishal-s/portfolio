@@ -33,9 +33,9 @@ const easeInOutCubic = (x) =>
   x < 0.5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
 
 const ProfileCardComponent = ({
-  avatarUrl = "<Placeholder for avatar URL>",
-  iconUrl = "<Placeholder for icon URL>",
-  grainUrl = "<Placeholder for grain URL>",
+  avatarUrl = "vite.svg",
+  iconUrl = "vite.svg",
+  grainUrl = "vite.svg",
   behindGradient,
   innerGradient,
   showBehindGradient = true,
